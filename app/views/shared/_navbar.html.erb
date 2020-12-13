@@ -63,9 +63,8 @@
         <%= link_to "CONTRIBUTE TO ARTICLE", root_path, class: "nav_link" %>
       </li>
       <li class="nav-second-item">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-          <input name="sitesearch" type="hidden" value="example.com">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search in Unswayed" required="required"  type="text">
+        <form action="articles" class="searchform" method="get" name="searchform">
+          <input autocomplete="on" class="form-control search" name="keyword" placeholder="Search in Unswayed" required="required"  type="text">
                 </li>
                 <li class="nav-second-item">
           <button class="button" type="submit">Search</button>

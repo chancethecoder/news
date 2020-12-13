@@ -5,20 +5,16 @@
   <h1 align="center"><%="We cannot find any articles"%></h1>
   <% else %>
   <h1 align="center"><%="Today's article"%></h1>
-  <% @articles.each do |article| %>
-  <%= article["title"] %>
-  <% end %>
-  <% end %>
-</div>
-
-<div class="container">
-  <div class="row">
-    <% @articles.each do |article| %>
-    <div class="col-12 col-lg-6">
-      <%= render "articles/card", article: article%>
+  <div class="container">
+    <div class="row">
+      <% @articles.each do |article| %>
+      <div class="col-12 col-lg-6">
+        <%= render "articles/card", article: article %>
+      </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
+  <% end %>
 </div>
 </div>
 </div>

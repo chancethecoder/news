@@ -7,7 +7,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%#= 아래 태그에서 에러가 발생하는데, webpacker 설정을 조금 살펴봐야 할 듯 합니다. %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
   </head>
 
